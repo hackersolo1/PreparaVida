@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NeonAcademy - Seu primeiro passo para o futuro</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.0.79"></script>
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="nav">
+        <div class="nav__inner">
+            <div class="nav__logo">NeonAcademy</div>
+
+            <div class="nav__links">
+                <a class="nav__link nav__link--active" href="#courses">Cursos</a>
+                <a class="nav__link" href="#">Professores</a>
+                <a class="nav__link" href="profile.html">Perfil</a>
+                <a class="nav__link" href="#">Comunidade</a>
+            </div>
+
+            <div class="nav__actions">
+                <button class="googleLoginBtn" id="googleHeaderLoginBtn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/3840px-Google_%22G%22_logo.svg.png"
+                        alt="" class="googleLoginBtn__icon">
+                    <p>Entrar com Google </p>
+                </button>
+                <div class="profileHeader" id="profileHeader">
+                    <img src="" alt="" id="userHeaderAvatar">
+                    <p id="usernameHeaderProfile"></p>
+                    <button id="logoutHeaderButton">
+                        <span class="material-symbols-outlined">logout</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__inner">
+
+            <div class="hero__content">
+                <span class="hero__badge">Inicie sua jornada</span>
+
+                <h1 class="hero__title">
+                    Seu primeiro <br />
+                    <span class="hero__title-accent">passo</span> para <br />
+                    o futuro.
+                </h1>
+
+                <p class="hero__description">
+                    Transforme sua carreira com cursos práticos, mentorias reais e acesso direto ao mercado.
+                    NeonAcademy é onde o talento encontra a oportunidade.
+                </p>
+
+                <div class="hero__actions">
+                    <button class="btn-primary" href="courses.html">
+                        Explorar Cursos
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <button class="btn-secondary">Como funciona</button>
+                </div>
+            </div>
+
+            <div class="hero__image-wrapper">
+                <div class="hero__image-frame">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaWuFT0BEfLrZxD5KUZkrkt9a3HrK2YFbXkSt03spCwXE_Kx3BSIZvjlgGCz0jsPCEv66Bvd5HYL4TpFS3UuqsgXJMemJAM6LsyzwSAe-Blg0XskRs8VNxQjAvapOcx7QEn4tJqPFm7ZAGd_Mq4B-c-rD5ddrQpopBjzJzWMgtYFz52MiSOwnbolGERLLrP9eSPAm8fkUGDLVXr7Ouu3V7Sp6gd90qrg2yPiAZ-YIhT8KLgaNMJu6vDPJPU1SvYCB2j6h-PVahlYA"
+                        alt="Young energetic diverse professionals collaborating in a modern workspace" />
+                    <div class="hero__image-overlay"></div>
+                </div>
+                <div class="hero__blob-1"></div>
+                <div class="hero__blob-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Bobu Section -->
+    <section class="why">
+        <div class="why__inner">
+            <div class="why__header">
+                <h2 class="why__title">Por que a <span class="why__title__span">NeonAcademy</span>?</h2>
+                <div class="why__underline"></div>
+            </div>
+
+            <div class="why__grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card__icon-wrap card__icon-wrap--primary">
+                        <span class="material-symbols-outlined">school</span>
+                    </div>
+                    <h3 class="card__title">Cursos Gratuitos</h3>
+                    <p class="card__text">Conteúdo de alta qualidade focado no que o mercado realmente exige, do básico
+                        ao avançado.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card__icon-wrap card__icon-wrap--tertiary">
+                        <span class="material-symbols-outlined">psychology</span>
+                    </div>
+                    <h3 class="card__title">Mentoria Ativa</h3>
+                    <p class="card__text">Aprenda diretamente com profissionais que já estão no topo das maiores techs
+                        do mundo.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card__icon-wrap card__icon-wrap--dark">
+                        <span class="material-symbols-outlined">work</span>
+                    </div>
+                    <h3 class="card__title">Vagas Reais</h3>
+                    <p class="card__text">Conexão direta com empresas parceiras buscando novos talentos preparados pela
+                        NeonAcademy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Carousel -->
+    <section class="courses" id="courses">
+        <div class="courses__header">
+            <div>
+                <h2 class="courses__title">Cursos em Alta</h2>
+                <p class="courses__subtitle">Aperfeiçoe suas habilidades mais requisitadas hoje.</p>
+            </div>
+        </div>
+
+        <div class="courses__track no-scrollbar">
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <div class="course-card__image-wrap">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE4GG3dg35hkU5jQUPuhYb0LKmbYHzspuc6vPU0a9dgbMQvRqzaJj9awl1urqyfAikXIop3tiOpB8Y1gwzm1SPhKVGS7PyrW38wWwy4yZGblY6M-TFOvKVcgkTlI5nJnnhl4w5IdijaVBEH84mK5uyKx5S05phB76VIVKJNMw51nJwVWSdgHqWfI7Z3cv_j8rd56Q0EFZ0B3LIFrNKwgALyHoQKf8ceoYdxvvrPdZnb-b8G_zQwCBnY8TEqTJtyhJWe2zlUq08E0w"
+                        alt="Software design interface" />
+                    <span class="course-card__tag">Design</span>
+                </div>
+                <div class="course-card__body">
+                    <h4 class="course-card__title">Product Design Masterclass</h4>
+                    <p class="course-card__desc">Domine Figma, UX Research e Design Systems com especialistas.</p>
+                    <div class="course-card__footer">
+                        <span class="course-card__rating">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1; font-size: 0.875rem;">star</span>
+                            4.9
+                        </span>
+                        <span class="course-card__price">Gratuito</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <div class="course-card__image-wrap">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBAIQEzGmT1WGDTTlpzSls3QGw21ZrnaSjGQGmXPD9ZSCaoge3s5UXMGGY-4Qf-thJH8BoDxkpgTVBhGoSDTeJHyPc0Po1tvG7GiUgnQU1VDCgs99NSpriRKCemo6R5rGkTODYDls4dq5syh3JR1X2kixFdN5wVKavuejiyZB8xE1NkVPLk4H44MBtcTe5RFP8MNkFdkfxdA2YhxYSddKeyPOwiIcR40XDIdos0Ppu-7BvyEK9oZYLroPcbca1AujEQ4R_NLZIsyk"
+                        alt="Code on dark screen" />
+                    <span class="course-card__tag">Coding</span>
+                </div>
+                <div class="course-card__body">
+                    <h4 class="course-card__title">Fullstack React & Node</h4>
+                    <p class="course-card__desc">Aprenda a construir aplicações escaláveis do zero absoluto.</p>
+                    <div class="course-card__footer">
+                        <span class="course-card__rating">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1; font-size: 0.875rem;">star</span>
+                            5.0
+                        </span>
+                        <span class="course-card__price">Gratuito</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <div class="course-card__image-wrap">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGqryGvDPHFCu-IlgXm6uw6FHu1NiV1Jh8sBVPgKOG5TU5hU8fLVHcz7ZGg3jzLfApdpiT8PmvNm_sTd8nZWu8gKn65Pm2G8EWgWH6ZWh2KvhZH_U8U8vrffBpQBwr4FvpLhTc2_sQkIJmC-LnE29ITmtQsgpgaadnz6thPt4AwmPpKBhVRV3MKZZITw1tzIqqtjYz21iqifLnHEH6RXnS_YIak-eEwep6Od7hJx7iHpI55RESZTdqIf9nqvbA7R9In29V9__o99c"
+                        alt="Data dashboard on tablet" />
+                    <span class="course-card__tag">Business</span>
+                </div>
+                <div class="course-card__body">
+                    <h4 class="course-card__title">Growth & Marketing</h4>
+                    <p class="course-card__desc">Estratégias avançadas de aquisição para o mercado moderno.</p>
+                    <div class="course-card__footer">
+                        <span class="course-card__rating">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1; font-size: 0.875rem;">star</span>
+                            4.8
+                        </span>
+                        <span class="course-card__price">Gratuito</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials__blob"></div>
+        <div class="testimonials__inner">
+            <h2 class="testimonials__title">
+                Quem já <span class="testimonials__title-accent">chegou lá</span>
+            </h2>
+
+            <div class="testimonials__grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <img class="testimonial-card__avatar"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUaONzRYrF8Ha5_VwDssRAIBJI0O1HIkTD38-K6O7zoY_wzZaRYjAs0z9GQ_ZSNO1qfSJqfQkKdueImBuxFPNc5W3AWeyeaZlA_ERmgmFuN_MF6CiD_v5PjMJWggGbaeDgsvZKGoFDALaxKJDGaU-Hfnc2e7OlH-sm5mMGAg7cyCX5P_krilNWPyRfAQKFCTfAae7br-sa68CixJU11K2W8IR_gDcq69rFQe3G92fTDmXYTNyAwrMDao0bqmovhDptThMcYonL7Ho"
+                        alt="Ricardo Santos" />
+                    <div>
+                        <span class="material-symbols-outlined testimonial-card__quote-icon"
+                            style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                        <p class="testimonial-card__text">"A mentoria na Bobu foi o divisor de águas. Saí de um emprego
+                            sem perspectiva para Desenvolvedor Jr em 4 meses."</p>
+                        <p class="testimonial-card__name">Ricardo Santos</p>
+                        <p class="testimonial-card__role">Dev na Nubank</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <img class="testimonial-card__avatar"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRswwl0BQRo5o-cLnj8MBNDZbYRTArWSouLgeip9GzvxVmp3IMyYEDpGY3wEsUt8EAdfQ6PlukKQf4_OfQTOHlZp1XRuYNXd27KIeixdDgKfeRRSNjIkrkHG5nYR6T5HaphHwU4QOULeZja0nPs1Rc7Wik0g-P6NkUJF806_hpH0xGfLJ8hkCHB07P7kPnAI56fCbk1wUs8JC5fBZPyZr_bJUHHICD8Yqdrh10XkdjQR30VyFWKSDB-qkmF2CWpY8qv6gNV-dn3G8"
+                        alt="Beatriz Lima" />
+                    <div>
+                        <span class="material-symbols-outlined testimonial-card__quote-icon"
+                            style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                        <p class="testimonial-card__text">"Os cursos são diretos ao ponto. Hoje lidero projetos de UI
+                            Design aplicando tudo que aprendi na comunidade."</p>
+                        <p class="testimonial-card__name">Beatriz Lima</p>
+                        <p class="testimonial-card__role">UI Designer na Ifood</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta">
+        <div class="cta__inner">
+            <div class="cta__dots"></div>
+            <div class="cta__content">
+                <h2 class="cta__title">Pronto para dar o <br /> próximo passo?</h2>
+                <p class="cta__text">Junte-se a mais de 50.000 jovens que estão construindo o futuro agora. É gratuito e
+                    sempre será.</p>
+                <div class="cta__actions">
+                    <button class="btn-cta-main" id="footerGetStartedButton">Quero me inscrever agora</button>
+                    <button class="btn-cta-ghost">
+                        Conhecer a comunidade
+                        <span class="material-symbols-outlined">groups</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__brand-name">NeonAcademy</div>
+                <p class="footer__brand-text">
+                    A maior plataforma de educação gratuita para a nova geração.
+                    Focada em impacto real e carreiras do futuro.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer__col-title">Plataforma</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Mentors</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer__col-title">Bobu Inc</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer__col-title">Social</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2024 NeonAcademy. Built for the next generation.</p>
+            <div class="footer__meta">
+                <span class="footer__meta-lang">Português (BR)</span>
+                <span class="footer__meta-status">System Status: Online</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

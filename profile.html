@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>NeonAcademy | Bobu's Dashboard</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="profile-styles.css" />
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <div class="nav__left">
+        <span class="nav__logo">NeonAcademy</span>
+        <div class="nav__links">
+          <a class="nav__link" href="#">Courses</a>
+          <a class="nav__link" href="#">Mentors</a>
+          <a class="nav__link" href="#">Pricing</a>
+          <a class="nav__link" href="#">Community</a>
+        </div>
+      </div>
+
+      <div class="nav__right">
+        <div class="nav__search">
+          <span class="material-symbols-outlined nav__search-icon">search</span>
+          <input class="nav__search-input" placeholder="Search knowledge..." type="text" />
+        </div>
+        <div class="nav__user">
+          <img class="nav__user-avatar" src="" alt="Student Profile" id="userHeaderAvatar" />
+          <span class="nav__user-name">Bobu</span>
+        </div>
+        <button id="signoutHeaderBtn">
+          <span class="material-symbols-outlined">logout</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+      <div class="profile-header__gradient"></div>
+
+      <div class="profile-header__inner">
+
+        <!-- Avatar -->
+        <div class="profile-header__avatar-wrap">
+          <div class="profile-header__avatar-frame">
+            <img src="" alt="Student Profile" id="profileAvatarMain" />
+          </div>
+          <span class="profile-header__pro-badge">PRO LEVEL</span>
+        </div>
+
+        <!-- Content -->
+        <div class="profile-header__content">
+          <div class="profile-header__title-row">
+            <h1 class="profile-header__name">Hey, Bobu.</h1>
+            <span class="profile-header__role">Creative Developer</span>
+          </div>
+
+          <p class="profile-header__bio">
+            Pushing the boundaries of digital aesthetics and functional design.
+            Currently mastering Advanced Motion UI and Blockchain Architecture.
+          </p>
+
+          <div class="profile-header__stats">
+            <div class="stat-chip">
+              <span class="stat-chip__value">12</span>
+              <span class="stat-chip__label">Enrolled</span>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-chip__value">08</span>
+              <span class="stat-chip__label">Completed</span>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-chip__value">2.4k</span>
+              <span class="stat-chip__label">XP Earned</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bento Grid -->
+    <div class="bento-grid">
+
+      <!-- Main Column -->
+      <div class="main-col">
+
+        <!-- Enrolled Courses -->
+        <div class="section-header">
+          <h2 class="section-title">Enrolled Courses</h2>
+          <button class="btn-view-all">View All Courses</button>
+        </div>
+
+        <div class="enrolled-grid">
+
+          <!-- Card 1 -->
+          <div class="enrolled-card">
+            <div class="enrolled-card__thumb">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR-G2mRK_Iwu5MFy6pgmDKPUqC2lcQbInupH_pCmMReZ0Z58VxbquWVal_Ex5mBL17gLv3fQ9c2GvMLj-GLJ7vdDOvkjayJoxuQMPoSmNsThycNwxjq4PKSl9vF0b2hp0_AjTUdxzbYP1X6TDdau_mmKFOPogq_glSJoa7_f9fvNZiULHUNhCIALwYsVrXq3Jr-7J6qN2BfItYkqmr6sQ2wpsr8cLaaYAAPSoRSDiX80P9kqoiAAUSDCxqioYH27yMzEjO9v2Mros"
+                alt="Retro Tech" />
+              <div class="enrolled-card__thumb-overlay"></div>
+              <span class="enrolled-card__level-badge enrolled-card__level-badge--advanced">Advanced</span>
+            </div>
+
+            <h3 class="enrolled-card__title">Creative Coding with Three.js</h3>
+
+            <div class="progress-row">
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 72%"></div>
+              </div>
+              <span class="progress-label">72%</span>
+            </div>
+
+            <div class="enrolled-card__footer">
+              <span class="enrolled-card__lessons">12 Lessons Left</span>
+              <button class="btn-resume">RESUME</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="enrolled-card">
+            <div class="enrolled-card__thumb">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeXhLrSfNMxNzEd8enqBC2wAaD3MpwcCZyIl1UtrkReDVLTXB9p3BiidrnQ_7rwBmltGZDrucquem-xYPAYWJh4uUO5qxU2V0dlity17Sutax4VQWPY6SYVi-i1m-4s4YBYfrA70X1eZ4NNi637mZIFuZtVFlcrLMftXuyGTU8iT9eKsKZ8KAHZh66gi_8_lqkAnGwizlXQ9OVuZ9T20BNR8BffMhT-l-hn8649352TLhURATlwz6xpoQH7a7x2mU9RnLV3FmO60w"
+                alt="Abstract Mesh" />
+              <div class="enrolled-card__thumb-overlay"></div>
+              <span class="enrolled-card__level-badge enrolled-card__level-badge--intermediate">Intermediate</span>
+            </div>
+
+            <h3 class="enrolled-card__title">UI Typography Masterclass</h3>
+
+            <div class="progress-row">
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 35%"></div>
+              </div>
+              <span class="progress-label">35%</span>
+            </div>
+
+            <div class="enrolled-card__footer">
+              <span class="enrolled-card__lessons">24 Lessons Left</span>
+              <button class="btn-resume">RESUME</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements">
+          <h2 class="section-title" style="margin-bottom: 1.5rem;">Recent Achievements</h2>
+          <div class="achievements__grid">
+
+            <div class="achievement-card">
+              <div class="achievement-card__icon achievement-card__icon--lime">
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+              <span class="achievement-card__label">React Architect</span>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-card__icon achievement-card__icon--purple">
+                <span class="material-symbols-outlined">terminal</span>
+              </div>
+              <span class="achievement-card__label">Code Ninja</span>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-card__icon achievement-card__icon--grey">
+                <span class="material-symbols-outlined">workspace_premium</span>
+              </div>
+              <span class="achievement-card__label">7 Day Streak</span>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-card__icon achievement-card__icon--locked">
+                <span class="material-symbols-outlined">lock</span>
+              </div>
+              <span class="achievement-card__label achievement-card__label--locked">Locked</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /main-col -->
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+
+        <!-- Resume Builder -->
+        <div class="resume-card">
+          <div class="resume-card__blob"></div>
+          <h3 class="resume-card__title">Resume Builder</h3>
+          <p class="resume-card__desc">Your skills are sharp. Let's make sure the world sees them. Export your progress
+            as a curated professional CV.</p>
+
+          <ul class="resume-card__list">
+            <li class="resume-card__item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span class="resume-card__item-label">Sync GitHub Projects</span>
+            </li>
+            <li class="resume-card__item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span class="resume-card__item-label">Verified Certs Included</span>
+            </li>
+            <li class="resume-card__item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span class="resume-card__item-label">AI Skill Mapping</span>
+            </li>
+          </ul>
+
+          <button class="btn-build-cv">BUILD MY CV</button>
+        </div>
+
+        <!-- Mentor Connection -->
+        <div class="mentor-card">
+          <p class="mentor-card__label">Your Mentor</p>
+          <div class="mentor-card__profile">
+            <img class="mentor-card__avatar"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAINnIU_OAvs57DVRF4VKnH1oCVrqi_hY8WhIDrIFQbBNa_e9rXNPBb6BBgenZfmQegGxpq2dY-br2zPROQ60T0HQhB704stKL8zY6sEO0xRm3cQKhpYQRS0F5Q8Jq1EJNnJVZ9N40qknTyOz_jTakR_yyJG4lWxyzhxxVZNIDVx0UKTyby-IvSInlHxfAYSpgpBWpXTE41sgtkU2a_6crbW5kWiF6NeMe-wr5zeQ-8BDIySBGK_W4yIqyIQIsa3D7dg8hT4sA9c08"
+              alt="Mentor" />
+            <div>
+              <span class="mentor-card__name">Alex Rivera</span>
+              <span class="mentor-card__role">Principal Designer @ Linear</span>
+            </div>
+          </div>
+          <button class="btn-schedule">SCHEDULE SYNC</button>
+        </div>
+
+        <!-- Learning Path -->
+        <div class="learning-path-card">
+          <span class="learning-path-card__tag">Recommended Next</span>
+          <h4 class="learning-path-card__title">Web3 Interface Patterns &amp; Smart Contracts</h4>
+          <p class="learning-path-card__hint">Based on your interest in "Creative Coding"</p>
+          <div class="avatar-stack">
+            <img class="avatar-stack__item"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ8N0AMptQxh4dk2ER-q1H119WjCt5DQB_GIvKpzcgu786LNYS_ke2Y3k7wipvzq3XzJDRruTgwHwK6GXJM2k5uOxL2xbCk940Kd35q5t6ELykW7YVUnNlAHtlu-XTZLTz9uMUWiK1JfT-IV3leX0o-qxDPAT9Wz91I1t8eXcCk_By3IJFglKTzjeCtWYZoaQnCW_E8oTtLANNRKsGa55rOEzglknpJVSpSxhYn7ufMZE3x9tQ1qyWIEGg7IdGAFndWsAqvmOUs84"
+              alt="User" />
+            <img class="avatar-stack__item"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8PxrJK-Zl6nC79NrIhbkxvFqZ7QQah7zALSfky-qychL0kgTKWcGj2hDWLDfcdtO7IA6REGJDjQrtZ_xhADYvGObXjQG-gnCKlb-4phIJj3PTZxNWh_x7RL4FnL-e9d8uvoiypEmPwHIzLoVSU_yrZW0uDyvPccIUW4w7Sjha-XL2u8HpU0mAd6nebo02agXTKEeS3wGHMonBLXIjRngVkDuLX7IES_ihxsUI-qQMFLsF5N2JlPziJZegKU0PGfBd3GVaJRwSY2U"
+              alt="User" />
+            <div class="avatar-stack__count">+42</div>
+          </div>
+        </div>
+
+      </div><!-- /sidebar -->
+
+    </div><!-- /bento-grid -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__grid">
+
+      <div>
+        <span class="footer__brand-name">NeonAcademy</span>
+        <p class="footer__brand-text">© 2024 NeonAcademy. Built for the next generation of creative minds and digital
+          explorers.</p>
+      </div>
+
+      <div>
+        <span class="footer__col-title">Platform</span>
+        <ul class="footer__list">
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Mentors</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer__col-title">Legal</span>
+        <ul class="footer__list">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer__col-title">Connect</span>
+        <ul class="footer__list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter/X</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <script src="profile.js" type="module"></script>
+</body>
+
+</html>

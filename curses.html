@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bobu - NeonAcademy Courses</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="curses.css" />
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__left">
+                <a class="header__logo" href="#">NeonAcademy</a>
+                <nav class="header__nav">
+                    <a class="header__nav-link header__nav-link--active" href="#">Courses</a>
+                    <a class="header__nav-link" href="#">Mentors</a>
+                    <a class="header__nav-link" href="#">Pricing</a>
+                    <a class="header__nav-link" href="#">Community</a>
+                </nav>
+            </div>
+
+            <div class="header__right">
+                <button class="googleLoginBtn" id="googleHeaderLoginBtn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/3840px-Google_%22G%22_logo.svg.png"
+                        alt="" class="googleLoginBtn__icon">
+                    <p>Entrar com Google </p>
+                </button>
+                <div class="profileHeader" id="profileHeader">
+                    <img src="" alt="" id="userHeaderAvatar">
+                    <p id="usernameHeaderProfile"></p>
+                    <button id="logoutHeaderButton">
+                        <span class="material-symbols-outlined">logout</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Hero / Editorial Intro -->
+        <section class="page-intro">
+            <span class="page-intro__badge">Level Up Your Career</span>
+
+            <h1 class="page-intro__title">
+                Bobu's <br />
+                <span class="page-intro__title-accent">Creative Forge.</span>
+            </h1>
+
+            <p class="page-intro__desc">
+                High-octane learning for the next generation of digital creators.
+                Unfiltered knowledge, industry-grade tools, and mentors who actually build.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="search-bar">
+                <div class="search-bar__input-wrap">
+                    <span class="material-symbols-outlined search-bar__icon">search</span>
+                    <input class="search-bar__input" placeholder="Search for your next obsession..." type="text" />
+                </div>
+                <div class="search-bar__actions">
+                    <button class="btn-filter">
+                        <span class="material-symbols-outlined">tune</span>
+                        Filters
+                    </button>
+                    <button class="btn-explore">Explore All</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid — Course Cards -->
+        <div class="courses-grid">
+
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <div class="course-card__image-wrap">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA-47A7yGDff3dSeb0hJWEqOrX48t4KSLO7lwc6qN-PcyDWgkDshNCA8uBb-3lWQmv-3DrasbjCujjICNO4RJadTBQdsFnuW2GRKupnGruvcqH0C37H4btFqEvGAT5K2DkhbLqdaK9LZJBVODt84IIGqcV_L3wTTShW5lPt7cBzUAbZToTEh4b7y-PLQvYmJowI2UPps6MJGOXJ1k_qFVkVb-ahXYFHppUV6RPu6nP7ilra5-HO2yrU6ssfuev8TjrETk7bjRMKCI"
+                        alt="UI/UX Design" />
+                    <span class="course-card__badge">Free</span>
+                </div>
+                <div class="course-card__body">
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Beginner Level</span>
+                        <div class="course-card__dot"></div>
+                        <span class="course-card__modules">12 Modules</span>
+                    </div>
+                    <h3 class="course-card__title">UI/UX Design Essentials</h3>
+                    <div class="course-card__footer">
+                        <div class="course-card__mentor">
+                            <div class="course-card__avatar">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWeFRaX2JsFyj2LXfHj14lS2f00HYode-NE2-5QoEL9CftZ_zW7vlaURIWcP5GqfIFvFX3TPFwPaUjBKdJP8sZKlSKgmGWscbNX4hl5r8D7IIjTLDuoIjw7bGhiB1-rRF9RpO-ydBLax-xKsDRFF50FhXCuPkrge_exrfGe1ymNW8HNJHOlAFGXN7bJ_46P2EHkm0YSwYBOVJy5EffuhzGPoW9UYdULakGRsH48_MCwRaR9sGX-RO7K8AQP2_tPJCFLvBMrlkZSqg"
+                                    alt="Alex Rivera" />
+                            </div>
+                            <span class="course-card__mentor-name">By Alex Rivera</span>
+                        </div>
+                        <span class="material-symbols-outlined course-card__arrow">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <div class="course-card__image-wrap">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpiEcZYgQ8VO_bXVk72-xTS6fcDiOsgmkj8VYW6HjDyt5V04IJAuHGJoK-b8nWOncdhTsnRBV5ihN-ejEF6ZxwxWb2XhjvMs_sGn_wtK0fNOwW3qkAWqm3a4K3_p6ZUbnGIBhS5enhXsme9HU1p1sxvIQtsy11070tSGHNSEJAXYBb-m2pzFLXIUYf4kDqxquIAIe54RA5T2HrpwYs8y8UtwpZytFSuy4BKB_HB-ERmPU9i_LCE7Flg4as3aH6ljwnJ-Ahj32yclc"
+                        alt="Digital Marketing" />
+                    <span class="course-card__badge">Free</span>
+                </div>
+                <div class="course-card__body">
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Beginner Level</span>
+                        <div class="course-card__dot"></div>
+                        <span class="course-card__modules">8 Modules</span>
+                    </div>
+                    <h3 class="course-card__title">Digital Marketing for Beginners</h3>
+                    <div class="course-card__footer">
+                        <div class="course-card__mentor">
+                            <div class="course-card__avatar">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxY0plF9npy4in_NOJG5g3Mi7NHpD18ha4gF3-DG55SLONJfs9uPC9Te_UZlLL0286QX1WlTnG1Ymsv_POBPwzuzab-aN60stvA6eUunM8DdLEqNVuFWWcnCLNtKcQX29car3Q3W5BKFYLE41bW9tmZ3gCq2PQxN6pqNoS5xInTnapppgrTRJpRfdiup3jWzDvqfQrtuCg03-Cym9iPqcBBBrbBsOwinxpCalhpD39cp0U9mNClBUBEyUXZkAmtW7cP1QbQPiIRCk"
+                                    alt="Sarah Chen" />
+                            </div>
+                            <span class="course-card__mentor-name">By Sarah Chen</span>
+                        </div>
+                        <span class="material-symbols-outlined course-card__arrow">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <div class="course-card__image-wrap">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjPKl8e-zYY2cauNgeuwzu5KlOQ6FVAfYIEGFBC6Uob8w-M9_ODlyaHjhzT8G5DttnqLeRqHNVz-M_zXEf4M2uMmRUtxEyr3AgHYjDB9eaUevxjG8j9DurwvU2Up8nJLTNsm1VUNDTMNU8vuIquTSXaHI3pSAKEujYC-AgkWGC24KQTOd9A13nFGlSk6Is0j0zgE0tjbeoA7O0GW3-jd2mfoPjlSwr19lZEpat8s9TPkUhkbb4F0iZUAH53ChyDHAtn5Ad7RKIEYU"
+                        alt="Coding with React" />
+                    <span class="course-card__badge">Free</span>
+                </div>
+                <div class="course-card__body">
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Beginner Level</span>
+                        <div class="course-card__dot"></div>
+                        <span class="course-card__modules">24 Modules</span>
+                    </div>
+                    <h3 class="course-card__title">Coding with React</h3>
+                    <div class="course-card__footer">
+                        <div class="course-card__mentor">
+                            <div class="course-card__avatar">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC467Pi52umD7DzrsKu2hGml98nKUeB5hk75SnctN9YIk7hZJvrc1TN1Uv6MSIEKunvYpf7dDGwMvFO094Iti27URZzn33eQMNm9Rzcq27_NK_0SVoUZiSVZXQyKzkNdbEIHgdprgrDByqDTgtGYy1dTt1ERJ1u0LNGtGLvIbFAhxWuq7W8dxRqrdmxjF5boW-lfi2wWRHqm69kilnv-Pz7azVl4nBozCtgmnxxwrHI4YDcyYud9O_AB2GZCtNSblkpDVYpQpyceUM"
+                                    alt="Marcus Thorne" />
+                            </div>
+                            <span class="course-card__mentor-name">By Marcus Thorne</span>
+                        </div>
+                        <span class="material-symbols-outlined course-card__arrow">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 4 -->
+            <div class="course-card">
+                <div class="course-card__image-wrap">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLyn4I7IUZhAIntoDCUDrPDnr74WVP_T8cjdP8YGJAmmUVOzAsLp2an06NaYkflBmdHsg-i9uSaGZLiNeV8o9jh_E2I50XZqPP2kOZj-gWFs87gk2_2RyHfFeiAbQTM5r1jeSFko1Jk6cJh1VrAaNuS_guQbvHom2IONliOpJ7iZ0QG8Q0ftqixlD0TXrLDj1hujbSUXyQYZfcc1tAy4KEDtpeeUstv6r-T1Bo_lmo5u3a6mSrdQTFmiBzrVsyryQEQ1xmW1BEHsM"
+                        alt="Project Management" />
+                    <span class="course-card__badge">Free</span>
+                </div>
+                <div class="course-card__body">
+                    <div class="course-card__meta">
+                        <span class="course-card__level">Beginner Level</span>
+                        <div class="course-card__dot"></div>
+                        <span class="course-card__modules">10 Modules</span>
+                    </div>
+                    <h3 class="course-card__title">Project Management 101</h3>
+                    <div class="course-card__footer">
+                        <div class="course-card__mentor">
+                            <div class="course-card__avatar">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMcdfuwLxLNtKUjYFMdrY3h8MX6xzygyDIExN526Ia83GxDK6tG0jjBmXbdmkudyEeUDcMzP_BNVDipUu8pAWuDf7ukuZ3Kq8S24G8DI0QYQrWbxqgUOJHLXUnfwoVQ-bvYbBlqi6lMGEfdE7wZSebukfkrV1jADAEpnlYyIXUUw3G1NZJqSr6LrXfdzyxTFKZAdZUoO5A9opTt6cotNt65SWHN4wIz7Ulml4eTKje7SLLIDupDoBS0m_mmCtYsIBfKw1kteouDvo"
+                                    alt="Elena Rossi" />
+                            </div>
+                            <span class="course-card__mentor-name">By Elena Rossi</span>
+                        </div>
+                        <span class="material-symbols-outlined course-card__arrow">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mentor Spotlight -->
+        <section class="mentor-section">
+            <div class="mentor-section__image-wrap">
+                <div class="mentor-section__decor"></div>
+                <img class="mentor-section__image"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh4rv3a2lwAQapzX3RE_FHyfeJ3s0fLHBmMl0w9AhZeUg2QOEtHFKeSVhsD3lj-ks0dGbNztvdCujjT3ZwsbWkrliTLhPK1DGHl1Pgwbfhkj9dJecMxpb3PCJWEThJG8dlIwHOOA14QvqM7bESSZYfEBwXpsD4KWU2xBsFasaU6uqXkd0-5G177b_hfdRulo1h0woVFqiQA6QXxdZZsCTUGDfsiXvCPrtWHBa_kE28fc_ORcltMrc9rG_mpJj2SI6oKyBSXY3L2U0"
+                    alt="Featured Mentor" />
+            </div>
+
+            <div class="mentor-section__content">
+                <span class="mentor-section__label">Mentor Spotlight</span>
+                <h2 class="mentor-section__title">
+                    Master the Craft with <em>Industry Titans.</em>
+                </h2>
+                <p class="mentor-section__text">
+                    Our mentors don't just teach from slides. They are active creators, developers, and designers
+                    at the world's most innovative companies. Get the mental models and the technical chops to win.
+                </p>
+                <div class="mentor-section__actions">
+                    <button class="btn-mentor-primary">
+                        View Mentor Directory
+                        <span class="material-symbols-outlined">north_east</span>
+                    </button>
+                    <button class="btn-mentor-secondary">Apply to Mentor</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div>
+                <div class="footer__brand-name">NeonAcademy</div>
+                <p class="footer__brand-text">Revolutionizing digital education through high-fidelity curricula and
+                    elite mentorship.</p>
+            </div>
+
+            <div>
+                <h4 class="footer__col-title">Platform</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Mentors</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer__col-title">Company</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer__col-title">Connect</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter / X</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2024 NeonAcademy. Built for the next generation.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
