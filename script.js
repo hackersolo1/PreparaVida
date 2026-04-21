@@ -2,7 +2,7 @@ import { supabase } from './auth.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
 
-    const urlData = 'http://127.0.0.1:3001/Frontend';
+    const urlData = 'https://prepara-vida.vercel.app';
 
     // LOGIN COM O GOOGLE
     document.querySelector('#googleHeaderLoginBtn').addEventListener('click', async () => {
