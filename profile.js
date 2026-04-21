@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (error) {
             console.log(error)
         } else {
-            window.location.href = `${urlData}/Frontend/index.html`;
+            window.location.href = `${urlData}/index.html`;
         }
     });
 });
