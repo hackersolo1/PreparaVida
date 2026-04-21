@@ -1,7 +1,7 @@
 import { supabase } from './auth.js';
 document.addEventListener('DOMContentLoaded', async () => {
 
-    const urlData = 'http://127.0.0.1:3000/Frontend';
+    const urlData = 'https://prepara-vida.vercel.app';
 
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelector('#profileAvatarMain').src = user.user_metadata.avatar_url;
 
     document.querySelector('.nav__logo').addEventListener('click', () => {
-        window.location.href = `${urlData}/Frontend/index.html`;
+        window.location.href = `${urlData}/index.html`;
     });
 
     document.querySelector('#signoutHeaderBtn').addEventListener('click', async () => {
