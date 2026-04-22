@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             {
                 id: id,
                 name: name,
-                email: email
+                email: email,
+                position: 'normal'
             }
         ])
 
